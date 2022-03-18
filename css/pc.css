@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* /*  */
+/*---------------------------------
+media min400
+---------------------------------*/
+@media (max-width: 400px) {
+  .content-title {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    margin: 15px;
+    color: #00005d;
+  }
+
+/*---------------------------------
+service
+---------------------------------*/
+  #service {
+    margin: 0;
+  }
+
+  .service-contents p{
+    margin: 5px;
+    padding: 5px;
+  }
+
+/*---------------------------------
+about
+---------------------------------*/
+  .about-pic {
+    left: 90px;
+  }
+
+/*---------------------------------
+works
+---------------------------------*/
+  #works img {
+    top: -50px;
+  }
+
+}
+
+/*---------------------------------
+media min500
+---------------------------------*/
+@media (min-width: 500px) {
+
+  /*---------------------------------
+  main_visual
+  ---------------------------------*/
+  .main-visual h1 {
+    font-size: 4.5rem;
+  }
+  .main-visual .outside::after {
+    font-size: 4.5rem;
+  }
+  
+  /*---------------------------------
+  about_box
+  ---------------------------------*/
+  .about-pic {
+    left: 140px;
+  }
+}
+
+/*---------------------------------
+media min630
+---------------------------------*/
+@media (min-width: 630px) {
+
+
+  .content-title {
+    font-size: 5.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+/*---------------------------------
+nav
+---------------------------------*/
+  .sp-nav {
+    display: none;
+  }
+
+  .pc-nav  {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .pc-nav ul {
+    display: flex;
+  }
+  
+  .pc-nav a {
+    display: block;
+    border-radius: 5px;
+    padding: 5px 14px;
+    margin: 3px;
+    font-size: 0.9rem;
+    color: #1869BC;
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+  .pc-nav a:hover {
+    background: #1869BC;
+    color: #fff;
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+/*---------------------------------
+main_visual
+---------------------------------*/
+.main-visual {
+  max-height: 650px;
+  margin-bottom: 100px;
+}
+
+.main-visual img {
+  max-height: 600px;
+  object-fit: cover;
+  object-position: top left;
+}
+.main-visual h1 {
+  font-size: 6rem;
+}
+  
+.main-visual.outside::after {
+  font-size: 6rem;
+}
+
+
+/*---------------------------------
+service
+---------------------------------*/
+#service {
+  width: 100%;
+}
+.desk-work {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  left: 50%;
+  bottom: -180px;
+  z-index: 30;
+}
+
+/*---------------------------------
+about
+---------------------------------*/
+
+#about {
+  position: relative;
+}
+
+.dance-pic {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 500px;
+  z-index: 0;
+}
+
+.about-pic {
+  width: 700px;
+  top: -280px;
+}
+
+.sky-pic {
+  width: 700px;
+  max-height: 700px;
+  left: 20px;
+}
+
+#about .profile {
+  text-align: left;
+  padding-left:100px;
+  width: 580px;
+  position: relative;
+  z-index: 50;
+}
+/*---------------------------------
+works
+---------------------------------*/
+
+#works img {
+  max-height: 550px;
+  top: -155px;
+}
+
+
+
+/*---------------------------------
+plane
+---------------------------------*/
+  @keyframes move {
+    100% {
+      transform: translate(-1100px, -200px);
+    }
+  }
+  .plane {
+    width: 60px;
+    top: 150px;
+    animation-duration: 7s;
+  }
+
+
+  /*---------------------------------
+form
+---------------------------------*/
+.form-img {
+  width: 650px;
+  top:160px;
+}
+
+
+
+/*---------------------------------
+footer
+---------------------------------*/
+  .footer-nav a {
+    font-size: 1.2rem;
+  }
+
+/*---------------------------------
+top_down
+---------------------------------*/
+
+.display-item {
+  width: 80px;
+}
+}
