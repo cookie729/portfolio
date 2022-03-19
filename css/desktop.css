@@ -20,6 +20,10 @@
   p {
     font-size: 1.1rem
   }
+
+  .mb {
+    margin-bottom: 200px;
+  }
 /*---------------------------------
 header_box
 ---------------------------------*/
@@ -35,12 +39,30 @@ header_box
   }
 
 /*---------------------------------
+text
+---------------------------------*/
+h3,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
+  margin-left: 50%;
+}
+/*---------------------------------
+wrapper
+---------------------------------*/
+.wrapper {
+  max-width: 1200px;
+
+}
+/*---------------------------------
 main_visual
 ---------------------------------*/
 .main-visual {
   position:static;
   display: flex;
   height: 700px;
+  margin-bottom: 100px;
 }
 .main-outer {
   position: relative;
@@ -59,36 +81,32 @@ main_visual
     white-space: pre;
   }
 
-  .main-visual h1 span {
-    font-size: 10rem
-  }
+.main-visual h1 span {
+  font-size: 10rem
+}
 
-  .main-visual .outside {
-    height: 700px;
-    overflow: hidden;
-  }
+.main-visual .outside {
+  height: 700px;
+  overflow: hidden;
+}
 
-  .main-visual .outside::after {
-    left: 0;
-    bottom: 0;
-    white-space: pre;
-    font-size: 10rem;
-    z-index: 30;
-  }
+.main-visual .outside::after {
+  left: 0;
+  bottom: 0;
+  white-space: pre;
+  font-size: 10rem;
+  z-index: 30;
+}
 
 /*---------------------------------
 service
 ---------------------------------*/
-#service {
-  margin-bottom: 50px;
-}
 
 .desk-work {
   width: 500px;
   margin: 0 auto;
-  right: 0;
-  left: 530px;
-  bottom: -230px;
+  top: 500px;
+  left: 55%;
 }
 
 
@@ -104,7 +122,6 @@ about
 
   #about .profile {
     width: 650px;
-    padding-left: 100px;
   }
 
   .dance-pic {
@@ -126,7 +143,6 @@ about
     top: -130px;
 }
 
-
 /*---------------------------------
 plane
 ---------------------------------*/
@@ -145,12 +161,17 @@ plane
 /*---------------------------------
 form
 ---------------------------------*/
+.form-menu {
+  margin-bottom: 14px;
+}
+
 .form-box {
   width: 40%;
 }
 
 .form-img {
   width: 700px;
+  bottom: -200px;
 }
 
 /*---------------------------------

@@ -1,70 +1,5 @@
 @charset "utf-8";
 
-/* /*  */
-/*---------------------------------
-media min400
----------------------------------*/
-@media (max-width: 400px) {
-  .content-title {
-    font-size: 4rem;
-  }
-
-  p {
-    font-size: 0.7rem;
-    margin: 15px;
-    color: #00005d;
-  }
-
-/*---------------------------------
-service
----------------------------------*/
-  #service {
-    margin: 0;
-  }
-
-  .service-contents p{
-    margin: 5px;
-    padding: 5px;
-  }
-
-/*---------------------------------
-about
----------------------------------*/
-  .about-pic {
-    left: 90px;
-  }
-
-/*---------------------------------
-works
----------------------------------*/
-  #works img {
-    top: -50px;
-  }
-
-}
-
-/*---------------------------------
-media min500
----------------------------------*/
-@media (min-width: 500px) {
-
-  /*---------------------------------
-  main_visual
-  ---------------------------------*/
-  .main-visual h1 {
-    font-size: 4.5rem;
-  }
-  .main-visual .outside::after {
-    font-size: 4.5rem;
-  }
-  
-  /*---------------------------------
-  about_box
-  ---------------------------------*/
-  .about-pic {
-    left: 140px;
-  }
-}
 
 /*---------------------------------
 media min630
@@ -82,7 +17,7 @@ media min630
 /*---------------------------------
 nav
 ---------------------------------*/
-  .sp-nav {
+  .mobile-nav {
     display: none;
   }
 
@@ -120,7 +55,6 @@ main_visual
 ---------------------------------*/
 .main-visual {
   max-height: 650px;
-  margin-bottom: 100px;
 }
 
 .main-visual img {
@@ -132,7 +66,7 @@ main_visual
   font-size: 6rem;
 }
   
-.main-visual.outside::after {
+.main-visual .outside::after {
   font-size: 6rem;
 }
 
@@ -140,17 +74,13 @@ main_visual
 /*---------------------------------
 service
 ---------------------------------*/
-#service {
-  width: 100%;
-}
 .desk-work {
   display: block;
   margin: 0 auto;
-  width: 400px;
+  width: 450px;
   position: absolute;
-  right: 0;
-  left: 50%;
-  bottom: -180px;
+  left: 35%;
+  bottom: -200px;
   z-index: 30;
 }
 
@@ -165,11 +95,10 @@ about
 .dance-pic {
   display: block;
   margin: 0 auto;
-  width: 400px;
+  width: 450px;
   position: absolute;
   top: 200px;
-  left: 0;
-  right: 500px;
+  left: -50px;
   z-index: 0;
 }
 
@@ -186,8 +115,6 @@ about
 
 #about .profile {
   text-align: left;
-  padding-left:100px;
-  width: 580px;
   position: relative;
   z-index: 50;
 }
@@ -221,11 +148,8 @@ plane
 form
 ---------------------------------*/
 .form-img {
-  width: 650px;
-  top:160px;
+  width: 550px;
 }
-
-
 
 /*---------------------------------
 footer
