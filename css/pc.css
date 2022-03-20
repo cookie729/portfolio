@@ -83,8 +83,6 @@ main_visual
 service
 ---------------------------------*/
 .desk-work {
-  display: block;
-  margin: 0 auto;
   width: 450px;
   position: absolute;
   right: -80px;
