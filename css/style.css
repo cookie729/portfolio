@@ -46,6 +46,8 @@ a {
   font-size: 5rem;
   text-align: left;
   margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 h3 {
@@ -60,8 +62,8 @@ p {
 
 
 #service, #about, #works, #contact {
-  padding-top: 150px;
-  margin-top:  -150px;
+  padding-top: 100px;
+  margin-top:  -100px;
 }
 
 /*---------------------------------
@@ -87,7 +89,6 @@ wrapper
   opacity: 0;
   transform: translateY(100px);
   transition: opacity .4s, transform 1s;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   
@@ -108,12 +109,13 @@ header
   align-items: center;
   position: fixed;
   background: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
   z-index: 100;
 }
 
 #header .main-logo {
   width: 200px;
+  margin-top: 5px;
   margin-left: 20px;
 }
 
@@ -210,8 +212,7 @@ main
 .main-visual {
   position: relative;
   width:100%;
-  margin-bottom: 40px;
-  /* margin: 0 auto 40px auto; */
+  margin-bottom: 60px;
 }
 
 .main-visual-text {
@@ -234,8 +235,8 @@ main
 
 .main-visual .outside::after {
   position: absolute;
-  left: 4px;
-  bottom: -4px;
+  left: 3px;
+  bottom: -3px;
   content: "Let's move on";
   font-size: 3.5rem;
   color: #1869bc;
@@ -252,24 +253,16 @@ main
 service
 ---------------------------------*/
 #service {
-  height: 500px;
   position: relative;
-  /* background-image: linear-gradient(#1869BC, #cdf7f7); */
   z-index: 30;
 }
 
-/* .service-item {
-  width: 100%;
-  height: 100%; */
-  /* background-image: linear-gradient(#fff, #cdf7f7) ; */
-  /* position:absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 20;
-} */
+#service h3 {
+  margin-top: -10px;
+}
 
 #service .text {
-  position: absolute;
+  position: relative;
   z-index: 50;
   width: 100%;
 }
@@ -282,20 +275,12 @@ service
   display: flex;
 }
 
-.mobile-service-img {
-  max-width: 500px;
-  margin: 0 auto;
-  position: absolute;
-  top: -70px;
-  left: 0;
-  right: 0;
-  z-index: 40;
-}
-
 .desk-work {
   width: 300px;
   position: absolute;
-  bottom: -150px;
+  right: 0;
+  bottom: -50px;
+  z-index: 0;
 }
 
 /*---------------------------------
@@ -303,9 +288,8 @@ about
 ---------------------------------*/
 #about {
   position: relative;
-  margin-top: 0;
-
 }
+
 #about .profile {
   text-align: left;
   position: relative;
@@ -315,6 +299,7 @@ about
 #about .name {
   font-size: 2rem;
   color: #00005d;
+  margin-top: -20px;
 }
 
 .about-pic {
@@ -343,7 +328,7 @@ about
   margin: 0 auto;
   width: 300px;
   position: absolute;
-  bottom: 150px;
+  top: 19px;
   left: 0;
   right: 500px;
   z-index: 0;
@@ -352,6 +337,7 @@ about
 works
 ---------------------------------*/
 #works {
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -378,28 +364,6 @@ contact
 }
 
 /*---------------------------------
-plane
----------------------------------*/
-.plane {
-  width: 50px;
-  position: absolute;
-  top: 280px;
-  right: -50px;
-  animation-name: move;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  z-index: 60;
-}
-@keyframes move {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: translate(-700px, -150px);
-  }
-}
-
-/*---------------------------------
 form
 ---------------------------------*/
 
@@ -421,7 +385,6 @@ form
 }
 
 label {
-  text-align: left;
   margin-bottom: 4px;
   display: block;
 }
@@ -441,7 +404,9 @@ textarea {
 }
 
 .button {
-  padding-bottom: 4px;
+  text-align: center;
+  padding-bottom: 3px;
+  margin-bottom: -2px;
   width: 60px;
   border: 1px solid #1869BC;
   border-radius: 5px;
@@ -458,6 +423,28 @@ textarea {
   transition-property: background;
   transition-duration: .3s;
   transition-timing-function: ease;
+}
+
+/*---------------------------------
+plane
+---------------------------------*/
+.plane {
+  width: 50px;
+  position: absolute;
+  top: 280px;
+  right: -50px;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  z-index: 60;
+}
+@keyframes move {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translate(-700px, -150px);
+  }
 }
 
 /*---------------------------------

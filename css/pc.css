@@ -14,6 +14,14 @@ media min630
   p {
     line-height: 1.7;
   }
+
+  h3,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
+  margin-left: 40%;
+}
 /*---------------------------------
 nav
 ---------------------------------*/
@@ -79,9 +87,9 @@ service
   margin: 0 auto;
   width: 450px;
   position: absolute;
-  left: 35%;
-  bottom: -200px;
-  z-index: 30;
+  right: -80px;
+  bottom: -100px;
+  z-index: 10;
 }
 
 /*---------------------------------
@@ -149,6 +157,11 @@ form
 ---------------------------------*/
 .form-img {
   width: 550px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 60%;
 }
 
 /*---------------------------------

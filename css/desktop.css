@@ -46,6 +46,7 @@ h3,
 .asterisk,
 .lang,
 .profile {
+/* .form-menu { */
   margin-left: 50%;
 }
 /*---------------------------------
@@ -101,27 +102,22 @@ main_visual
 /*---------------------------------
 service
 ---------------------------------*/
-
 .desk-work {
   width: 500px;
   margin: 0 auto;
   top: 500px;
   left: 55%;
+  
 }
 
 
 /*---------------------------------
 about
 ---------------------------------*/
-
   .about-pic {
     width: 800px;
     top: -280px;
     left: 180px;
-  }
-
-  #about .profile {
-    width: 650px;
   }
 
   .dance-pic {
@@ -182,7 +178,7 @@ input[type="email"],
 textarea {
   background: rgba(255, 255, 255, .4);
   border-radius: 8px;
-  width: 100%;
+  width: 50%;
   border: solid 1px #1869BC;
 }
 
