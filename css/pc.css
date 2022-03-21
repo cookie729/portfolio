@@ -158,7 +158,8 @@ form
 }
 input[type="text"],
 input[type="email"],
-textarea {
+textarea,
+button {
   width: 60%;
 }
 

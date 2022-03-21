@@ -107,9 +107,7 @@ service
   margin: 0 auto;
   top: 500px;
   left: 55%;
-  
 }
-
 
 /*---------------------------------
 about
@@ -131,10 +129,6 @@ about
   /*---------------------------------
   works
   ---------------------------------*/
-  #works .content-title {
-    top: 70px;
-  }
-
   #works img {
     top: -130px;
 }
@@ -175,15 +169,18 @@ form
 ---------------------------------*/
 input[type="text"],
 input[type="email"],
-textarea {
-  background: rgba(255, 255, 255, .4);
-  border-radius: 8px;
+textarea,
+button {
   width: 50%;
-  border: solid 1px #1869BC;
 }
 
 label {
   font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.6rem;
+  height: 60px;
 }
 
 /*---------------------------------

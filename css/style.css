@@ -275,12 +275,20 @@ service
   display: flex;
 }
 
+.service-wrap p {
+  margin-right: 20px;
+}
+
+#service .lang {
+  margin-bottom: 30px;
+}
+
 .desk-work {
   width: 300px;
   position: absolute;
   right: 0;
   bottom: -50px;
-  z-index: 100;
+  z-index: 0;
 }
 
 /*---------------------------------
@@ -288,6 +296,11 @@ about
 ---------------------------------*/
 #about {
   position: relative;
+}
+
+.about-bg {
+  background: #fff;
+  opacity: 0.1;
 }
 
 #about .profile {
@@ -300,6 +313,11 @@ about
   font-size: 2rem;
   color: #00005d;
   margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+#about p {
+  margin-bottom:15px;
 }
 
 .about-pic {
@@ -322,13 +340,14 @@ about
   top: 0px;
   right: 0px;
   z-index: -0;
+
 }
 
 .dance-pic {
   margin: 0 auto;
   width: 300px;
   position: absolute;
-  top: 19px;
+  top: 190px;
   left: 0;
   right: 500px;
   z-index: 0;
@@ -337,23 +356,12 @@ about
 works
 ---------------------------------*/
 #works {
-  margin-bottom: 80px;
   position: relative;
 }
 
 #works .content-title {
   color: #1869bc;
 }
-
-/* #works img {
-  margin: 0 auto;
-  max-height: 500px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  left: -50px;
-  z-index:50;
-} */
 
 /*---------------------------------
 contact
@@ -394,35 +402,80 @@ input[type="email"],
 textarea {
   background: rgba(255, 255, 255, .4);
   border: 2px solid #fff;
-  border-radius: 8px;
+  border-radius: 5px;
   width: 100%;
-  border: solid 1px #1869BC;
+  border: solid 1px #1968BC;
 }
 
 textarea {
   height: 6rem;
 }
 
-.button {
-  text-align: center;
-  padding-bottom: 3px;
-  margin-bottom: -2px;
-  width: 60px;
-  border: 1px solid #1869BC;
-  border-radius: 5px;
-  background: #fff;
-  color: #1869BC;
-  transition-duration: .3s;
-  transition-timing-function: ease;
+button .mail {
+  padding-right: 15px;
 }
 
-.button:hover {
-  border: 1px solid #1869BC;
-  background: #1869BC;
+
+button {
+  width: 100%;
+  background: #1869bc;
   color: #fff;
-  transition-property: background;
-  transition-duration: .3s;
-  transition-timing-function: ease;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  height: 50px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: .5s ease all;
+  outline: none;
+}
+button:hover {
+  background: #fff;
+  color: #1869bc;
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 3px;
+  width: 0;
+  background: #1869bc;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+button:hover:before {
+  width: 100%;
+  transition: .5s ease .2s all;
+}
+
+button::after {
+  position: absolute;
+  top: 50%;
+  right: .8rem;
+  content: '';
+  margin-top: -5px;
+  border: 7px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-color: #1869bc;
+  opacity: 0;
+}
+button:hover::after {
+  animation: arrow 1.2s infinite;
+  animation-delay: .7s;
+}
+@keyframes arrow {
+  50% {
+    right: .2em;
+    opacity: 1;
+  }
+
+  100% {
+    right: -.4em;
+    opacity: 0;
+  }
 }
 
 /*---------------------------------
