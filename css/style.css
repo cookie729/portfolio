@@ -118,10 +118,20 @@ header
   z-index: 100;
 }
 
+.header-logo {
+  display: flex;
+  font-size: 0.8rem;
+}
+
 .main-logo {
-  width: 200px;
-  margin-top: 5px;
+  width: 30px;
+  margin-right: 5px;
   margin-left: 20px;
+}
+
+.site-title {
+  margin-bottom: 2px;
+  color: #1869bc;
 }
 
 .mobile-nav {
@@ -221,12 +231,12 @@ main
 }
 
 .main-visual-text {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: #fff;
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 30;
 }
 
 .main-visual .outside {
@@ -243,9 +253,9 @@ main
   left: 3px;
   bottom: -3px;
   content: "Let's move on";
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: #1869bc;
-  z-index: 10;
+  z-index: 20;
 }
 
 .main-visual-item {
@@ -362,6 +372,7 @@ works
 ---------------------------------*/
 #works {
   position: relative;
+  z-index: 30;
 }
 
 #works .content-title {
@@ -600,7 +611,7 @@ display-animation
   top: 300px;
   right: 0;
   left: 0;
-  z-index: 30;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
 }
@@ -610,7 +621,7 @@ display-animation
   margin: 0 auto;
   top: -330px;
   list-style:none;
-  z-index: 30;
+  z-index: 20;
 }
 
 .display-item {
@@ -645,12 +656,40 @@ display-animation
     }
   }
 
+  @keyframes fade {
+    0% {
+      opacity: .4;
+    }
+    20% {
+      opacity: .6;
+    }
+    45% {
+      opacity: .5;
+    }
+    50% {
+      opacity: .7;
+    }
+    65% {
+      opacity: .5
+    }
+    75% {
+      opacity: .4;
+    }
+    85% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   .display-animation li:nth-child() {
     display: none;
   }
   .display-animation li:nth-child(1) {
     left: 0%;
     animation: fall 27s linear infinite,
+    fade 27s ease infinite,
     sway1 3s ease-in-out infinite alternate;
     animation-delay: 0s;
     opacity: 0.6;
@@ -658,27 +697,28 @@ display-animation
   .display-animation li:nth-child(2) {
     left:10%;
     animation: fall 31s linear infinite,
+    fade 31s ease infinite,
     sway2 2s ease-in-out infinite alternate;
     animation-delay: 7s;
-    opacity: 0.7;
   }
   .display-animation li:nth-child(3) {
     left: 20%;
     animation: fall 26s linear infinite,
+    fade 26s ease infinite,
     sway1 4s ease-in-out infinite alternate;
     animation-delay: 12s;
-    opacity: 0.8;
   }
   .display-animation li:nth-child(4) {
     left: 25%;
     animation: fall 30s linear infinite,
+    fade 30s ease infinite,
     sway2 5s ease-in-out infinite alternate;
     animation-delay: 17s;
-    opacity: 0.6;
   }
   .display-animation li:nth-child(5) {
     left: 35%;
     animation: fall 28s linear infinite,
+    fade 28s ease infinite,
     sway2 2s ease-in-out infinite alternate;
     animation-delay: 22s;
     opacity: 0.7;
@@ -687,35 +727,35 @@ display-animation
   .display-animation li:nth-child(6) {
     left: 50%;
     animation: fall 30s linear infinite,
+    fade 30s ease infinite,
     sway2 3s ease-in-out infinite alternate;
     animation-delay: 3.5s;
-    opacity: 0.8;
   }
   .display-animation li:nth-child(7) {
     left:65%;
     animation: fall 26s linear infinite,
+    fade 26s ease infinite,
     sway1 3s ease-in-out infinite alternate;
     animation-delay: 9.5s;
-    opacity: 0.6;
   }
   .display-animation li:nth-child(8) {
     left: 75%;
     animation: fall 26s linear infinite,
+    fade 26s ease infinite,
     sway2 3s ease-in-out infinite alternate;
     animation-delay: 14.5s;
-    opacity: 0.7;
   }
   .display-animation li:nth-child(9) {
     left: 80%;
     animation: fall 27s linear infinite,
+    fade 27s ease infinite,
     sway1 3s ease-in-out infinite alternate;
     animation-delay: 19.5s;
-    opacity: 0.8;
   }
   .display-animation li:nth-child(10) {
     left: 90%;
     animation: fall 28s linear infinite,
+    fade 28s ease infinite,
     sway2 3s ease-in-out infinite alternate;
     animation-delay: 24.5s;
-    opacity: 0.6;
   }

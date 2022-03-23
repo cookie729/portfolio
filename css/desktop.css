@@ -27,9 +27,14 @@
 /*---------------------------------
 header_box
 ---------------------------------*/
-  #header .main-logo {
-    width: 250px;
-  }
+.header-logo {
+  display: flex;
+  font-size: 1rem;
+}
+
+.main-logo {
+  width: 40px;
+}
 
   .pc-nav a {
     font-size: 1.2rem;
@@ -72,6 +77,8 @@ main_visual
 }
 
 .main-visual img {
+  object-fit: cover;
+  object-position: top right;
   position: relative;
   width: 80%;
   z-index: 0;
