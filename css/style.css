@@ -2,12 +2,10 @@
 
 html {
   font-size: 100%;
-
 }
 
 body {
   width: 100%;
-  font-size: 1rem;
   color: #1869BC;
   margin: 0;
   font-family: 'Kalam', cursive;
@@ -52,6 +50,7 @@ h3 {
 p {
   line-height: 1.6;
   color: #00005d;
+  font-size: 1rem;
 }
 
 
@@ -627,7 +626,6 @@ display-animation
 .display-item {
   width: 60px;
 }
-
 
 @keyframes fall {
   to {

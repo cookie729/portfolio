@@ -1,0 +1,54 @@
+
+/*---------------------------------
+media max400
+---------------------------------*/
+@media (max-width: 450px) {
+
+  .content-title {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+/*---------------------------------
+header
+---------------------------------*/
+  .main-logo {
+    margin-left: 10px;
+  }
+  .mobile-nav {
+    margin-right: 14px;
+  }
+/*---------------------------------
+main-visual
+---------------------------------*/
+  .main-visual-text {
+    font-size: 3.5rem;
+  }
+  .main-visual .outside::after {
+    font-size: 3.5rem;
+  }
+
+/*---------------------------------
+about
+---------------------------------*/
+  #about .name {
+    font-size: 0.85rem;
+  }
+
+/*---------------------------------
+footer
+---------------------------------*/
+  #footer {
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+}
