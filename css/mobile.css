@@ -29,6 +29,9 @@ header
 /*---------------------------------
 main-visual
 ---------------------------------*/
+.main-visual {
+  margin-bottom: 30px;
+}
   .main-visual-text {
     font-size: 3rem;
   }
