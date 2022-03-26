@@ -505,7 +505,7 @@ plane
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  z-index: 60;
+  z-index: 100;
 }
 @keyframes move {
   0% {
