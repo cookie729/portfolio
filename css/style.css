@@ -267,6 +267,7 @@ main
 service
 ---------------------------------*/
 #service {
+
   position: relative;
   z-index: 30;
 }
@@ -283,6 +284,7 @@ service
 
 #service p {
   margin-bottom: 40px;
+  padding: 0;
 }
 
 .service-wrap {
