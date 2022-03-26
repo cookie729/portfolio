@@ -5,7 +5,8 @@ media max400
 @media (max-width: 450px) {
 
   .content-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
   }
 
   h3 {
@@ -29,19 +30,21 @@ header
 main-visual
 ---------------------------------*/
   .main-visual-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .main-visual .outside::after {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
 /*---------------------------------
 about
 ---------------------------------*/
   #about .name {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
-
+  #about .dance-pic {
+    top: 120px;
+  }
 /*---------------------------------
 footer
 ---------------------------------*/
@@ -51,4 +54,4 @@ footer
     margin-bottom: 0;
   }
 
-}
+} 
