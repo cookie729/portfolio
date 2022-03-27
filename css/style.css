@@ -291,6 +291,7 @@ service
 }
 
 .service-wrap p {
+  width: 150px;
   margin-right: 20px;
 }
 
