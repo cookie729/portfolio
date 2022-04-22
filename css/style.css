@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/*---------------------------------
+common
+---------------------------------*/
+
 html {
   font-size: 100%;
 }
@@ -380,6 +384,28 @@ works
   color: #1869bc;
 }
 
+.works-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.works-item-wrap {
+  width: 45%;
+  height: 45%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.works-item {
+  transition-duration: .2s;
+}
+.works-item:hover {
+  opacity: .7;
+  transition-duration: .2s;
+}
+
+.works-item-title {
+  margin-bottom: 5px;
+  text-align: center;
+}
 /*---------------------------------
 contact
 ---------------------------------*/
