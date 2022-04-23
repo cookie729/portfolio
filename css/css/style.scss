@@ -285,14 +285,12 @@ service
   .content-item {
     margin-top: -10px;
   }
-  .item-text {
-    margin-bottom: 40px;
-  }
 }
 
 .service-wrap {
   display: flex;
-  p {
+  .item-text {
+    margin-bottom: 40px;
     width: 150px;
     margin-right: 30px;
   }

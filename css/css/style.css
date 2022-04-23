@@ -267,14 +267,12 @@ service
 #service .content-item {
   margin-top: -10px;
 }
-#service .item-text {
-  margin-bottom: 40px;
-}
 
 .service-wrap {
   display: flex;
 }
-.service-wrap p {
+.service-wrap .item-text {
+  margin-bottom: 40px;
   width: 150px;
   margin-right: 30px;
 }
