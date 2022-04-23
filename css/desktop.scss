@@ -1,7 +1,12 @@
+$main-color: #1869BC;
+$text-color: #00005d;
+$bg-color: #fff;
+
 /*---------------------------------
 @media min1040
 ---------------------------------*/
 @media (min-width: 1040px) {
+
   main {
     width: 90%;
     margin: 0 auto;
@@ -16,13 +21,12 @@
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.1rem
   }
 
   .mb {
     margin-bottom: 200px;
   }
-
   /*---------------------------------
   header
   ---------------------------------*/
@@ -45,10 +49,10 @@
   text
   ---------------------------------*/
   h3,
-.service-wrap,
-.asterisk,
-.lang,
-.profile {
+  .service-wrap,
+  .asterisk,
+  .lang,
+  .profile {
     margin-left: 50%;
   }
 
@@ -63,42 +67,40 @@
   main_visual
   ---------------------------------*/
   .main-visual {
-    position: static;
+    position:static;
     display: flex;
     height: 700px;
     margin-bottom: 100px;
-  }
-  .main-visual-item {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top right;
-       object-position: top right;
-    position: relative;
-    width: 80%;
-    z-index: 0;
-  }
-  .main-visual .main-visual-text {
-    font-size: 8.5rem;
-    white-space: pre;
-  }
-  .main-visual .main-visual-text span {
-    font-size: 10rem;
-  }
-  .main-visual .outside {
-    height: 700px;
-    overflow: hidden;
-  }
-  .main-visual .outside::after {
-    left: 0;
-    bottom: 0;
-    white-space: pre;
-    font-size: 10rem;
-    z-index: 30;
-  }
-  .main-visual .main-outer {
-    position: relative;
-    width: 20%;
-    background-image: linear-gradient(#a0cbf7, #cdf7f7, #fff);
+    &-item {
+      object-fit: cover;
+      object-position: top right;
+      position: relative;
+      width: 80%;
+      z-index: 0;
+    }
+    .main-visual-text {
+      font-size: 8.5rem;
+      white-space: pre;
+      span {
+        font-size: 10rem;
+      }
+    }
+    .outside {
+      height: 700px;
+      overflow: hidden;
+      &::after {
+        left: 0;
+        bottom: 0;
+        white-space: pre;
+        font-size: 10rem;
+        z-index: 30;
+      }
+    }
+    .main-outer {
+      position: relative;
+      width: 20%;
+      background-image: linear-gradient(#a0cbf7,#cdf7f7 ,#fff);
+    }
   }
 
   /*---------------------------------
@@ -135,18 +137,9 @@
     width: 24%;
     height: 24%;
   }
-
   /*---------------------------------
   plane
   ---------------------------------*/
-  @-webkit-keyframes move {
-    0% {
-      transform: none;
-    }
-    100% {
-      transform: translate(-1950px, -200px);
-    }
-  }
   @keyframes move {
     0% {
       transform: none;
@@ -157,10 +150,8 @@
   }
   .plane {
     width: 60px;
-    -webkit-animation-duration: 13s;
-            animation-duration: 13s;
+    animation-duration: 13s;
   }
-
   /*---------------------------------
   form
   ---------------------------------*/
@@ -180,10 +171,10 @@
   /*---------------------------------
   form
   ---------------------------------*/
-  input[type=text],
-input[type=email],
-textarea,
-button {
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
     width: 50%;
   }
 
@@ -203,11 +194,12 @@ button {
     font-size: 1.25rem;
   }
 
+
   /*---------------------------------
   top_down
   ---------------------------------*/
+
   .display-item {
-    width: 100px;
+  width: 100px;
   }
 }
-/*# sourceMappingURL=desktop.css.map */

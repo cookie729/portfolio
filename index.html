@@ -7,8 +7,8 @@
   <title>Kouki's Portfolio</title>
   <link rel="shortcut icon" href="images/favicon.svg">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pc.css">
   <link rel="stylesheet" href="css/desktop.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,7 @@
   rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <header id="header">
@@ -25,33 +26,30 @@
         <img class="main-logo" src="images/main-logo.svg" alt="logo">
         <h1 class="site-title">Let's move on</h1>
       </a>
+
       <div class="mobile-nav">
         <span class="material-icons" id="open">menu</span>
       </div>
-
-      <div class="pc-nav">
-        <nav>
+      
+        <nav class="pc-nav">
           <ul>
-            <li><a href="#">Top</a></li>
-            <li><a href=#service>Service</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="pc-nav-text" href="#">Top</a></li>
+            <li><a class="pc-nav-text" href=#service>Service</a></li>
+            <li><a class="pc-nav-text" href="#about">About</a></li>
+            <li><a class="pc-nav-text" href="#works">Works</a></li>
+            <li><a class="pc-nav-text" href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
       
       <div class="overlay">
         <span class="material-icons" id="close">close</span>
-        <nav>
-          <ul>
-            <li><a href="#">Top</a></li>
-            <li><a href=#service>Service</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="close-nav">
+            <li class="close-text"><a href="#">Top</a></li>
+            <li class="close-text"><a href=#service>Service</a></li>
+            <li class="close-text"><a href="#about">About</a></li>
+            <li class="close-text"><a href="#works">Works</a></li>
+            <li class="close-text"><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
       </div>
     </header>
     
@@ -66,27 +64,27 @@
       
       
       <section class="wrapper mb" id="service">
-        <div class="text">
+        <div class="text-wrap">
           <h2 class="content-title">Service</h2>
-          <h3>サイトコーディング</h3>
+          <h3 class="content-item">サイトコーディング</h3>
           <div class="service-wrap">
-            <p>
+            <p class="item-text">
               ・製作費<br>
               ・トップページ<br>
               ・その他1ページ<br>
             </p>
-            <p>
+            <p class="item-text">
               20,000円〜<br>
               20,000円  <br>
               10,000円  <br>
             </p>
           </div>
-            <h3>使用言語</h3>
-            <p class="lang">
+            <h3 class="content-item">使用言語</h3>
+            <p class="lang item-text">
               ・HTML&CSS<br>
               ・JavaScript/jQuery<br>
             </p>
-            <p class="asterisk">※費用については相談可能です。
+            <p class="asterisk item-text">※費用については相談可能です。
               <br>お気軽にご相談下さい。
             </p>
           </div>
@@ -124,13 +122,12 @@
         <div class="works-wrapper">
 
           <div class="works-item-wrap">
-            <p class="works-item-title">EC SITE -Fam Fan-</p>
-            <a href="#">
-              <div class="works-item">
-                <img class="works-item-img" src="images/works/fam-fan.png" alt="">
-              </div>
+            <a class="works-item" href="https://cookie729.github.io/ecsite.fam-fan/">
+              <img class="works-item-img" src="images/works/fam-fan.png" alt="">
+              EC SITE -Fam Fun-
             </a>
           </div>
+
         </div>
       </section>
 
@@ -164,7 +161,7 @@
           </div>
           
           <div class="form-menu button">
-            <button type="submit"><i class="fas fa-envelope mail"></i>送信</button>
+            <button class="button" type="submit"><i class="fas fa-envelope mail"></i>送信</button>
           </div>
         </form>
         <img class="form-img" src="images/contact_himawari.png" alt="">
@@ -172,29 +169,28 @@
     </main>
     
     <footer id="footer">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href=#service>Service</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="footer-nav">
+          <li><a class="nav-text" href=#service>Service</a></li>
+          <li><a class="nav-text" href="#about">About</a></li>
+          <li><a class="nav-text" href="#works">Works</a></li>
+          <li><a class="nav-text" href="#contact">Contact</a></li>
         </ul>
-      </nav>
-      
-      <div class="footer-top">
-        <a class="footer-main" href="#">
+
+      <div class="footer-icon">
+        <a class="sunflower icon-main footer-icon-move" href="#">
           <img src="images/footer_top.svg" alt="">
-          <p>Top</p>
+          <p class="icon-text">Top</p>
         </a>
-        <a class="footer-hover" href="#">
+        <a class="sunflower icon-hover footer-icon-move" href="#">
           <img src="images/footer_hover.svg" alt="">
-          <p>Top</p>
+          <p class="icon-text">Top</p>
         </a>
       </div>
-      
+
       <p class="copy">&copy;2022 Kouki's Portfolio</p>
-      
+
     </footer>
+
     <ul class="display-animation">
       <li><img class="display-item" src="images/top_down1.svg" alt=""></li>
       <li><img class="display-item" src="images/top_down2.svg" alt=""></li>
