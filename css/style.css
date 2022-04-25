@@ -816,4 +816,443 @@ display-animation
   -webkit-animation-delay: 24.5s;
           animation-delay: 24.5s;
 }
+
+/*---------------------------------
+media min630
+---------------------------------*/
+@media (min-width: 640px) {
+  .content-title {
+    font-size: 5.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  h3,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
+    margin-left: 40%;
+  }
+
+  /*---------------------------------
+  nav
+  ---------------------------------*/
+  .mobile-nav {
+    display: none;
+  }
+
+  .pc-nav {
+    display: block;
+    margin-right: 20px;
+  }
+  .pc-nav ul {
+    display: flex;
+  }
+  .pc-nav-text {
+    display: block;
+    border-radius: 5px;
+    padding: 5px 14px;
+    margin: 3px;
+    font-size: 0.9rem;
+    color: #1869BC;
+    transition-property: background 0.3s ease;
+  }
+  .pc-nav a:hover {
+    background: #1869BC;
+    color: #fff;
+    transition-property: background 0.3s ease;
+  }
+
+  /*---------------------------------
+  main_visual
+  ---------------------------------*/
+  .main-visual {
+    max-height: 650px;
+  }
+  .main-visual-item {
+    max-height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top left;
+       object-position: top left;
+  }
+  .main-visual-text {
+    font-size: 6rem;
+  }
+  .main-visual .outside::after {
+    font-size: 6rem;
+  }
+
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 450px;
+    position: absolute;
+    right: -80px;
+    bottom: -100px;
+    z-index: 10;
+  }
+
+  /*---------------------------------
+  about
+  ---------------------------------*/
+  #about {
+    position: relative;
+  }
+
+  .dance-pic {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    z-index: 0;
+  }
+
+  .about-pic {
+    width: 700px;
+    top: -280px;
+  }
+
+  .sky-pic {
+    width: 700px;
+    max-height: 700px;
+    left: 20px;
+  }
+
+  /*---------------------------------
+  works
+  ---------------------------------*/
+  .works-item-wrap {
+    width: 30%;
+    height: 30%;
+  }
+
+  /*---------------------------------
+  plane
+  ---------------------------------*/
+  @-webkit-keyframes move {
+    100% {
+      transform: translate(-1100px, -200px);
+    }
+  }
+  @keyframes move {
+    100% {
+      transform: translate(-1100px, -200px);
+    }
+  }
+  .plane {
+    width: 60px;
+    top: 150px;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+
+  /*---------------------------------
+  form
+  ---------------------------------*/
+  .form-img {
+    width: 600px;
+  }
+
+  input[type=text],
+input[type=email],
+textarea,
+button {
+    width: 60%;
+  }
+
+  /*---------------------------------
+  footer
+  ---------------------------------*/
+  .nav-text {
+    font-size: 1.2rem;
+  }
+
+  /*---------------------------------
+  top_down
+  ---------------------------------*/
+  .display-item {
+    width: 80px;
+  }
+}
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .content-title {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .mb {
+    margin-bottom: 200px;
+  }
+
+  /*---------------------------------
+  header
+  ---------------------------------*/
+  .header-logo {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .main-logo {
+    width: 40px;
+  }
+
+  .pc-nav-text {
+    font-size: 1.2em;
+    padding: 5px 16px;
+    margin: 3px;
+  }
+
+  /*---------------------------------
+  text
+  ---------------------------------*/
+  h3,
+.service-wrap,
+.asterisk,
+.lang,
+.profile {
+    margin-left: 50%;
+  }
+
+  /*---------------------------------
+  wrapper
+  ---------------------------------*/
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  /*---------------------------------
+  main_visual
+  ---------------------------------*/
+  .main-visual {
+    position: static;
+    display: flex;
+    height: 700px;
+    margin-bottom: 100px;
+  }
+  .main-visual-item {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top right;
+       object-position: top right;
+    position: relative;
+    width: 80%;
+    z-index: 0;
+  }
+  .main-visual .main-visual-text {
+    font-size: 8.5rem;
+    white-space: pre;
+  }
+  .main-visual .main-visual-text span {
+    font-size: 10rem;
+  }
+  .main-visual .outside {
+    height: 700px;
+    overflow: hidden;
+  }
+  .main-visual .outside::after {
+    left: 0;
+    bottom: 0;
+    white-space: pre;
+    font-size: 10rem;
+    z-index: 30;
+  }
+  .main-visual .main-outer {
+    position: relative;
+    width: 20%;
+    background-image: linear-gradient(#a0cbf7, #cdf7f7, #fff);
+  }
+
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 500px;
+    margin: 0 auto;
+    top: 500px;
+    left: 55%;
+  }
+
+  /*---------------------------------
+  about
+  ---------------------------------*/
+  .about-pic {
+    width: 800px;
+    top: -280px;
+    left: 180px;
+  }
+
+  .dance-pic {
+    width: 550px;
+    position: absolute;
+    top: 200px;
+    right: 600px;
+    z-index: 0;
+  }
+
+  /*---------------------------------
+  works
+  ---------------------------------*/
+  .works-item-wrap {
+    width: 24%;
+    height: 24%;
+  }
+
+  /*---------------------------------
+  plane
+  ---------------------------------*/
+  @-webkit-keyframes move {
+    0% {
+      transform: none;
+    }
+    100% {
+      transform: translate(-1950px, -200px);
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: none;
+    }
+    100% {
+      transform: translate(-1950px, -200px);
+    }
+  }
+  .plane {
+    width: 60px;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+  }
+
+  /*---------------------------------
+  form
+  ---------------------------------*/
+  .form-menu {
+    margin-bottom: 14px;
+  }
+
+  .form-box {
+    width: 40%;
+  }
+
+  .form-img {
+    width: 100%;
+    bottom: -200px;
+  }
+
+  /*---------------------------------
+  form
+  ---------------------------------*/
+  input[type=text],
+input[type=email],
+textarea,
+button {
+    width: 50%;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+    height: 60px;
+  }
+
+  /*---------------------------------
+  footer
+  ---------------------------------*/
+  .footer-nav a {
+    font-size: 1.25rem;
+  }
+
+  /*---------------------------------
+  top_down
+  ---------------------------------*/
+  .display-item {
+    width: 100px;
+  }
+}
+/*---------------------------------
+media max478
+---------------------------------*/
+@media (max-width: 478px) {
+  .content-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  /*---------------------------------
+  header
+  ---------------------------------*/
+  .main-logo {
+    margin-left: 10px;
+  }
+
+  .mobile-nav {
+    margin-right: 14px;
+  }
+
+  /*---------------------------------
+  main-visual
+  ---------------------------------*/
+  .main-visual {
+    margin-bottom: 30px;
+  }
+  .main-visual-text {
+    font-size: 3rem;
+  }
+  .main-visual .outside::after {
+    font-size: 3rem;
+    left: 1.5px;
+    bottom: -1.5px;
+  }
+
+  /*---------------------------------
+  about
+  ---------------------------------*/
+  #about .name {
+    font-size: 1.2rem;
+  }
+  #about .dance-pic {
+    top: 130px;
+  }
+
+  /*---------------------------------
+  footer
+  ---------------------------------*/
+  #footer {
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

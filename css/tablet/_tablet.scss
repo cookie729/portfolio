@@ -5,7 +5,7 @@ $bg-color: #fff;
 /*---------------------------------
 media min630
 ---------------------------------*/
-@media (min-width: 630px) {
+@media (min-width: 640px) {
 
     .content-title {
       font-size: 5.5rem;
@@ -40,7 +40,7 @@ media min630
         border-radius: 5px;
         padding: 5px 14px;
         margin: 3px;
-        font-size: 1rem;
+        font-size: .9rem;
         color: $main-color;
         transition-property: background .3s ease;
       }
