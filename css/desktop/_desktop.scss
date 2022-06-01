@@ -134,9 +134,21 @@ $bg-color: #fff;
   works
   ---------------------------------*/
   .works-item-wrap {
-    width: 24%;
-    height: 24%;
+    width: 23%;
+    height: 23%;
   }
+  .works-wrapper {
+    &::after {
+      width: 23%;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 23%;
+      order: 1;
+    }
+  }
+  
   /*---------------------------------
   plane
   ---------------------------------*/

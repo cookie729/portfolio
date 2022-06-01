@@ -116,6 +116,11 @@ media min630
     width: 30%;
     height: 30%;
   }
+  .works-wrapper::after {
+    content: "";
+    display: block;
+    width: 30%;
+  }
 
   /*---------------------------------
   plane

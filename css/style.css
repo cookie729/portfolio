@@ -368,11 +368,16 @@ works
   width: 45%;
   height: 45%;
   text-align: center;
-  transition-duration: 0.2s;
+  background: #fff;
 }
-.works-item-wrap:hover {
+
+.works-item-img {
+  transition: 0.2s;
+}
+
+.works-item-img:hover {
   opacity: 0.7;
-  transition-duration: 0.2s;
+  transition: 0.2s;
 }
 
 .works-item-title {
@@ -933,6 +938,12 @@ media min630
     height: 30%;
   }
 
+  .works-wrapper::after {
+    content: "";
+    display: block;
+    width: 30%;
+  }
+
   /*---------------------------------
   plane
   ---------------------------------*/
@@ -1115,8 +1126,18 @@ button {
   works
   ---------------------------------*/
   .works-item-wrap {
-    width: 24%;
-    height: 24%;
+    width: 23%;
+    height: 23%;
+  }
+
+  .works-wrapper::after {
+    width: 23%;
+  }
+  .works-wrapper::before {
+    content: "";
+    display: block;
+    width: 23%;
+    order: 1;
   }
 
   /*---------------------------------

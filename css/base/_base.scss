@@ -380,15 +380,20 @@ works
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .works-item-wrap {
   width: 45%;
   height: 45%;
   text-align: center;
-  transition-duration: .2s;
-  &:hover {
-    opacity: .7;
-    transition-duration: .2s;
-  }
+  background: $bg-color;
+}
+
+.works-item-img {
+  transition: .2s
+}
+.works-item-img:hover {
+  opacity: .7;
+  transition: .2s
 }
 .works-item-title {
   margin-bottom: 5px;
