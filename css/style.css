@@ -31,6 +31,8 @@ a {
 }
 
 .content-title {
+  position: relative;
+  z-index: 100;
   font-size: 5rem;
   text-align: left;
   margin-bottom: 40px;
@@ -498,7 +500,6 @@ button::after {
   bottom: -100px;
   left: 0;
   right: 0;
-  z-index: 40;
 }
 
 /*---------------------------------
@@ -1177,7 +1178,7 @@ button {
   }
 
   .form-img {
-    width: 100%;
+    width: 65%;
     bottom: -200px;
   }
 

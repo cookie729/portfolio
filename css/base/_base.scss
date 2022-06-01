@@ -39,6 +39,8 @@ a {
 
 
 .content-title {
+  position: relative;
+  z-index: 100;
   font-size: 5rem;
   text-align: left;
   margin-bottom: 40px;
@@ -501,7 +503,6 @@ button {
   bottom: -100px;
   left: 0;
   right: 0;
-  z-index: 40;
 }
 /*---------------------------------
 plane
