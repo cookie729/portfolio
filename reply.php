@@ -34,21 +34,21 @@
         <ul>
           <li><a class="pc-nav-text" href="index.html">Home
           </a></li>
-          <li><a class="pc-nav-text" href=#service>Service</a></li>
-          <li><a class="pc-nav-text" href="#about">About</a></li>
-          <li><a class="pc-nav-text" href="#works">Works</a></li>
-          <li><a class="pc-nav-text" href="#contact">Contact</a></li>
+          <li><a class="pc-nav-text" href="service.html">Service</a></li>
+          <li><a class="pc-nav-text" href="about.html">About</a></li>
+          <li><a class="pc-nav-text" href="works.html">Works</a></li>
+          <li><a class="pc-nav-text" href="contact.html">Contact</a></li>
         </ul>
       </nav>
       
       <div class="overlay">
         <span class="material-icons" id="close">close</span>
           <ul class="close-nav">
-            <li class="close-text"><a href="index.html">Top</a></li>
-            <li class="close-text"><a href=#service>Service</a></li>
-            <li class="close-text"><a href="#about">About</a></li>
-            <li class="close-text"><a href="#works">Works</a></li>
-            <li class="close-text"><a href="#contact">Contact</a></li>
+            <li class="close-text"><a href="index.html">Home</a></li>
+            <li class="close-text"><a href="service.html">Service</a></li>
+            <li class="close-text"><a href="about.html">About</a></li>
+            <li class="close-text"><a href="works.html">Works</a></li>
+            <li class="close-text"><a href="contact.html">Contact</a></li>
           </ul>
       </div>
       </div>
@@ -58,8 +58,8 @@
       <div class="contact-check">
         <p>
           <?php
-      $dsn= 'mysql:host=localhost;dbname=cookie.7292 2;charset=utf8';
-      $user= 'kouki.lmo';
+      $dsn= 'mysql:host=localhost;dbname=cookie.7292;charset=utf8';
+      $user= 'kouki-lmo';
       $pass= 'Cookie.729';
       $dbh= new PDO($dsn,$user,$pass);
       // var_dump($dbh);
@@ -100,12 +100,12 @@
   <a class="contact-check" href="index.html">Homeへ戻る</a>
 </main>
 
-<footer id="footer">
+    <footer id="footer">
         <ul class="footer-nav">
-          <li><a class="nav-text" href=#service>Service</a></li>
-          <li><a class="nav-text" href="#about">About</a></li>
-          <li><a class="nav-text" href="#works">Works</a></li>
-          <li><a class="nav-text" href="#contact">Contact</a></li>
+          <li><a class="nav-text" href="service.html">Service</a></li>
+          <li><a class="nav-text" href="about.html">About</a></li>
+          <li><a class="nav-text" href="works.html">Works</a></li>
+          <li><a class="nav-text" href="contact.html">Contact</a></li>
         </ul>
 
       <div class="footer-icon">
