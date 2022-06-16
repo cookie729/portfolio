@@ -392,6 +392,14 @@ wrapper
   transform: none;
 }
 
+.desk-work {
+  width: 350px;
+  position: absolute;
+  right: -30px;
+  bottom: -100px;
+  z-index: 0;
+}
+
 /*---------------------------------
 media max478
 ---------------------------------*/
@@ -421,12 +429,24 @@ media min640
     line-height: 1.7;
   }
 
-  h3,
+  .name,
+.content-item,
 .service-wrap,
 .asterisk,
 .lang,
 .profile {
-    margin-left: 40%;
+    margin-left: 30%;
+  }
+
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 450px;
+    position: absolute;
+    right: -50px;
+    bottom: -150px;
+    z-index: 10;
   }
 }
 /*---------------------------------
@@ -456,12 +476,22 @@ media min640
   /*---------------------------------
   text
   ---------------------------------*/
-  h3,
+  .name,
+.content-item,
 .service-wrap,
 .asterisk,
 .lang,
 .profile {
-    margin-left: 50%;
+    margin-left: 40%;
+  }
+
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 500px;
+    margin: 0 auto;
+    left: 55%;
   }
 }
 /*---------------------------------

@@ -393,10 +393,10 @@ wrapper
 }
 
 .desk-work {
-  width: 300px;
+  width: 350px;
   position: absolute;
-  right: 0;
-  bottom: 0px;
+  right: -30px;
+  bottom: -100px;
   z-index: 0;
 }
 
@@ -435,20 +435,20 @@ media min640
 .asterisk,
 .lang,
 .profile {
-    margin-left: 40%;
+    margin-left: 30%;
+  }
+
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 450px;
+    position: absolute;
+    right: -50px;
+    bottom: -150px;
+    z-index: 10;
   }
 }
-/*---------------------------------
-service
----------------------------------*/
-.desk-work {
-  width: 450px;
-  position: absolute;
-  right: -50px;
-  bottom: -150px;
-  z-index: 10;
-}
-
 /*---------------------------------
 @media min1040
 ---------------------------------*/
@@ -482,7 +482,7 @@ service
 .asterisk,
 .lang,
 .profile {
-    margin-left: 50%;
+    margin-left: 40%;
   }
 
   /*---------------------------------
