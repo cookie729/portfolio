@@ -1,0 +1,219 @@
+$main-color: #1869BC;
+$text-color: #00005d;
+$bg-color: #fff;
+
+
+/*---------------------------------
+common
+---------------------------------*/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  color: $main-color;
+  margin: 0;
+  font: {
+    family: 'Kalam', cursive;
+    family: 'Short Stack', cursive;
+    family: 'Klee One', cursive;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mb {
+  margin-bottom: 100px;
+}
+
+.mt {
+  margin-top: 100px;
+}
+
+
+.content-title {
+  position: relative;
+  z-index: 100;
+  font-size: 5rem;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px; 
+}
+
+p {
+  line-height: 1.6;
+  color: $text-color;
+  font-size: 1rem;
+}
+
+/*---------------------------------
+container
+---------------------------------*/
+.container{
+  background-image: linear-gradient(#fff, #cdf7f7, #fff, #cdf7f7);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/*---------------------------------
+text
+---------------------------------*/
+.text {
+  text-align: left;
+  opacity: 0;
+  transition: opacity 4s;
+  position: relative;
+  z-index: 60;
+}
+
+.text.appear {
+  opacity: 1;
+}
+
+
+/*---------------------------------
+wrapper
+---------------------------------*/
+.wrapper {
+  // width: 90%;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity .4s, transform 1s;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.wrapper.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.desk-work {
+  width: 350px;
+  position: absolute;
+  right: -30px;
+  bottom: -100px;
+  z-index: 0;
+}
+
+/*---------------------------------
+media max478
+---------------------------------*/
+@media (max-width: 478px) {
+
+  .content-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/*---------------------------------
+media min640
+---------------------------------*/
+@media (min-width: 640px) {
+
+  .content-title {
+    font-size: 5.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+  .name,
+  .content-item,
+  .service-wrap,
+  .asterisk,
+  .lang,
+  .profile {
+    margin-left: 30%;
+  }
+  
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 450px;
+    position: absolute;
+    right: -50px;
+    bottom: -150px;
+    z-index: 10;
+  }
+}
+
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+
+  main {
+    margin: 0 auto;
+  }
+
+  .content-title {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.1rem
+  }
+
+  .mb {
+    margin-bottom: 200px;
+  }
+
+  /*---------------------------------
+  text
+  ---------------------------------*/
+  .name,
+  .content-item,
+  .service-wrap,
+  .asterisk,
+  .lang,
+  .profile {
+    margin-left: 40%;
+  }
+
+
+   /*---------------------------------
+  service
+  ---------------------------------*/
+  .desk-work {
+    width: 500px;
+    margin: 0 auto;
+    left: 55%;
+  }
+
+}

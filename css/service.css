@@ -295,68 +295,6 @@ media max478
   }
 }
 /*---------------------------------
-service
----------------------------------*/
-.mb {
-  margin-bottom: 200px;
-}
-
-#service {
-  position: relative;
-  z-index: 30;
-}
-#service .text-wrap {
-  position: relative;
-  z-index: 50;
-  width: 100%;
-}
-
-.content-item {
-  margin-top: -10px;
-}
-
-.content-item,
-.item-text,
-.service-wrap {
-  margin-left: 0;
-}
-
-.item-text {
-  margin-bottom: 40px;
-}
-
-.service-wrap {
-  display: flex;
-}
-.service-wrap .item-text {
-  width: 150px;
-  margin-right: 30px;
-}
-
-/*---------------------------------
-media min640
----------------------------------*/
-@media (min-width: 640px) {
-  /*---------------------------------
-  service
-  ---------------------------------*/
-  .service-desk-img {
-    left: 150px;
-    margin: 0;
-  }
-}
-/*---------------------------------
-@media min1040
----------------------------------*/
-@media (min-width: 1040px) {
-  /*---------------------------------
-  service
-  ---------------------------------*/
-  .service-desk-img {
-    margin: 0;
-  }
-}
-/*---------------------------------
 common
 ---------------------------------*/
 html {
@@ -455,10 +393,10 @@ wrapper
 }
 
 .desk-work {
-  width: 350px;
+  width: 300px;
   position: absolute;
-  right: -30px;
-  bottom: -100px;
+  right: 0;
+  bottom: 0px;
   z-index: 0;
 }
 
@@ -497,20 +435,20 @@ media min640
 .asterisk,
 .lang,
 .profile {
-    margin-left: 30%;
-  }
-
-  /*---------------------------------
-  service
-  ---------------------------------*/
-  .desk-work {
-    width: 450px;
-    position: absolute;
-    right: -50px;
-    bottom: -150px;
-    z-index: 10;
+    margin-left: 40%;
   }
 }
+/*---------------------------------
+service
+---------------------------------*/
+.desk-work {
+  width: 450px;
+  position: absolute;
+  right: -50px;
+  bottom: -150px;
+  z-index: 10;
+}
+
 /*---------------------------------
 @media min1040
 ---------------------------------*/
@@ -544,7 +482,7 @@ media min640
 .asterisk,
 .lang,
 .profile {
-    margin-left: 40%;
+    margin-left: 50%;
   }
 
   /*---------------------------------
@@ -704,321 +642,42 @@ media min640
   }
 }
 /*---------------------------------
-about
+service
 ---------------------------------*/
-#about {
-  position: relative;
-}
-#about .name {
-  font-size: 2rem;
-  color: #00005d;
-  margin-top: -20px;
-  margin-bottom: 15px;
+.mb {
+  margin-bottom: 200px;
 }
 
-.profile {
-  text-align: left;
-  position: relative;
-  z-index: 50;
-  margin-bottom: 15px;
-}
-
-.about-bg {
-  background: #fff;
-  opacity: 0.1;
-}
-
-.about-pic {
-  width: 600px;
-  margin: 0 auto;
-  border-radius: 50%;
-  -o-object-fit: hidden;
-     object-fit: hidden;
-  position: relative;
-  left: 100px;
-  top: -300px;
-  z-index: 0;
-}
-
-.sky-pic {
-  width: 600px;
-  max-height: 600px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 0;
-}
-
-.dance-pic {
-  margin: 0 auto;
-  width: 300px;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 500px;
-  z-index: 0;
-}
-
-/*---------------------------------
-media max478
----------------------------------*/
-@media (max-width: 478px) {
-  /*---------------------------------
-   about
-   ---------------------------------*/
-  #about .name {
-    font-size: 1.2rem;
-  }
-  #about .dance-pic {
-    top: 30px;
-  }
-}
-/*---------------------------------
-media min640
----------------------------------*/
-@media (min-width: 640px) {
-  /*---------------------------------
-  about
-  ---------------------------------*/
-  #about {
-    position: relative;
-  }
-
-  .dance-pic {
-    display: block;
-    margin: 0 auto;
-    width: 450px;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    z-index: 0;
-  }
-
-  .about-pic {
-    width: 700px;
-    top: -280px;
-  }
-
-  .sky-pic {
-    width: 700px;
-    max-height: 700px;
-    left: 20px;
-  }
-}
-/*---------------------------------
-@media min1040
----------------------------------*/
-@media (min-width: 1040px) {
-  /*---------------------------------
-  about
-  ---------------------------------*/
-  .about-pic {
-    width: 800px;
-    top: -280px;
-    left: 180px;
-  }
-
-  .dance-pic {
-    width: 550px;
-    position: absolute;
-    right: 600px;
-    z-index: 0;
-  }
-}
-/*---------------------------------
-works
----------------------------------*/
-#works {
+#service {
   position: relative;
   z-index: 30;
 }
-#works .content-title {
-  color: #1869BC;
-}
-
-.works-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.works-item-wrap {
-  width: 45%;
-  height: 45%;
-  text-align: center;
-  background: #fff;
-}
-
-.works-item {
-  transition: 0.2s;
-}
-
-.works-item:hover {
-  opacity: 0.7;
-  transition: 0.2s;
-}
-
-.works-item-title {
-  margin-bottom: 5px;
-}
-
-/*---------------------------------
-media min640
----------------------------------*/
-@media (min-width: 640px) {
-  /*---------------------------------
-  works
-  ---------------------------------*/
-  .works-item-wrap {
-    width: 30%;
-    height: 30%;
-  }
-
-  .works-wrapper::after {
-    content: "";
-    display: block;
-    width: 30%;
-  }
-}
-/*---------------------------------
-@media min1040
----------------------------------*/
-@media (min-width: 1040px) {
-  /*---------------------------------
-  works
-  ---------------------------------*/
-  .works-item-wrap {
-    width: 23%;
-    height: 23%;
-  }
-
-  .works-wrapper::after {
-    width: 23%;
-  }
-  .works-wrapper::before {
-    content: "";
-    display: block;
-    width: 23%;
-    order: 1;
-  }
-}
-/*---------------------------------
-contact
----------------------------------*/
-#contact {
+#service .text-wrap {
   position: relative;
   z-index: 50;
-}
-
-/*---------------------------------
-form
----------------------------------*/
-.form-menu {
-  position: relative;
-  z-index: 90;
-  margin-bottom: 8px;
-}
-
-label {
-  margin-bottom: 4px;
-  display: block;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-  background: rgba(255, 255, 255, 0.4);
-  border: solid 1px #1968BC;
-  border-radius: 5px;
   width: 100%;
 }
 
-textarea {
-  height: 6rem;
+.content-item {
+  margin-top: -10px;
 }
 
-button {
-  width: 100%;
-  background: #1869BC;
-  color: #fff;
-  border-radius: 5px;
-  position: relative;
-  height: 50px;
-  font-size: 1.4rem;
-  transition: 0.5s ease all;
-}
-button .mail {
-  padding-right: 15px;
-}
-button:hover {
-  background: #fff;
-  color: #1869BC;
-}
-button:hover:before {
-  width: 100%;
-  transition: 0.5s ease 0.2s all;
-}
-button:hover::after {
-  -webkit-animation: arrow 1.2s 0.7s infinite;
-          animation: arrow 1.2s 0.7s infinite;
-}
-button:before {
-  content: "";
-  position: absolute;
-  right: 0;
-  height: 3px;
-  width: 0;
-  background: #1869BC;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0.8rem;
-  margin-top: -5px;
-  border: 7px solid transparent;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-left-color: #1869BC;
-  opacity: 0;
+.content-item,
+.item-text,
+.service-wrap {
+  margin-left: 0;
 }
 
-@-webkit-keyframes arrow {
-  50% {
-    right: 0.2em;
-    opacity: 1;
-  }
-  100% {
-    right: -0.4em;
-    opacity: 0;
-  }
+.item-text {
+  margin-bottom: 40px;
 }
 
-@keyframes arrow {
-  50% {
-    right: 0.2em;
-    opacity: 1;
-  }
-  100% {
-    right: -0.4em;
-    opacity: 0;
-  }
+.service-wrap {
+  display: flex;
 }
-.form-img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  right: 0;
+.service-wrap .item-text {
+  width: 150px;
+  margin-right: 30px;
 }
 
 /*---------------------------------
@@ -1026,17 +685,11 @@ media min640
 ---------------------------------*/
 @media (min-width: 640px) {
   /*---------------------------------
-  form
+  service
   ---------------------------------*/
-  .form-img {
-    width: 600px;
-  }
-
-  input[type=text],
-input[type=email],
-textarea,
-button {
-    width: 60%;
+  .service-desk-img {
+    left: 150px;
+    margin: 0;
   }
 }
 /*---------------------------------
@@ -1044,39 +697,10 @@ button {
 ---------------------------------*/
 @media (min-width: 1040px) {
   /*---------------------------------
-  form
+  service
   ---------------------------------*/
-  .form {
-    margin: 0 auto;
-  }
-  .form-menu {
-    margin-bottom: 14px;
-  }
-  .form-box {
-    width: 40%;
-  }
-  .form-img {
-    width: 60%;
-    bottom: -200px;
-  }
-
-  /*---------------------------------
-  form
-  ---------------------------------*/
-  input[type=text],
-input[type=email],
-textarea,
-button {
-    width: 50%;
-  }
-
-  label {
-    font-size: 1.2rem;
-  }
-
-  button {
-    font-size: 1.6rem;
-    height: 60px;
+  .service-desk-img {
+    margin: 0;
   }
 }
 /*---------------------------------
@@ -1304,4 +928,4 @@ media min640
     width: 100px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=service.css.map */

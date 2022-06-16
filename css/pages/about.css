@@ -1,0 +1,126 @@
+/*---------------------------------
+about
+---------------------------------*/
+#about {
+  position: relative;
+}
+#about .name {
+  font-size: 2rem;
+  color: #00005d;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+.profile {
+  text-align: left;
+  position: relative;
+  z-index: 50;
+  margin-bottom: 15px;
+}
+
+.about-bg {
+  background: #fff;
+  opacity: 0.1;
+}
+
+.about-pic {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 50%;
+  -o-object-fit: hidden;
+     object-fit: hidden;
+  position: relative;
+  left: 100px;
+  top: -300px;
+  z-index: 0;
+}
+
+.sky-pic {
+  width: 600px;
+  max-height: 600px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+.dance-pic {
+  margin: 0 auto;
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 500px;
+  z-index: 0;
+}
+
+/*---------------------------------
+media max478
+---------------------------------*/
+@media (max-width: 478px) {
+  /*---------------------------------
+   about
+   ---------------------------------*/
+  #about .name {
+    font-size: 1.2rem;
+  }
+  #about .dance-pic {
+    top: 30px;
+  }
+}
+/*---------------------------------
+media min640
+---------------------------------*/
+@media (min-width: 640px) {
+  /*---------------------------------
+  about
+  ---------------------------------*/
+  #about {
+    position: relative;
+  }
+
+  .dance-pic {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  .about-pic {
+    width: 700px;
+    top: -280px;
+  }
+
+  .sky-pic {
+    width: 700px;
+    max-height: 700px;
+    left: 20px;
+  }
+}
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+  /*---------------------------------
+  about
+  ---------------------------------*/
+  .about-pic {
+    width: 800px;
+    top: -280px;
+    left: 180px;
+  }
+
+  .dance-pic {
+    width: 550px;
+    position: absolute;
+    right: 600px;
+    z-index: 0;
+  }
+}
+/*# sourceMappingURL=about.css.map */

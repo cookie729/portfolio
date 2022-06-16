@@ -1,0 +1,67 @@
+
+/*---------------------------------
+service
+---------------------------------*/
+.mb {
+  margin-bottom: 200px;
+}
+#service {
+  position: relative;
+  z-index: 30;
+  .text-wrap {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+  }
+}
+.content-item {
+  margin-top: -10px;
+}
+.content-item,
+.item-text,
+.service-wrap {
+  margin-left: 0;
+}
+.item-text{
+  margin-bottom: 40px;
+}
+
+.service-wrap {
+  display: flex;
+  .item-text {
+    width: 150px;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+/*---------------------------------
+media min640
+---------------------------------*/
+@media (min-width: 640px) {
+ 
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .service-desk-img {
+    left: 150px;
+    margin: 0;
+  }
+}
+
+
+
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+
+  /*---------------------------------
+  service
+  ---------------------------------*/
+  .service-desk-img {
+    margin: 0;
+  }
+}

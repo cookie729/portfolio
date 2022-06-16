@@ -1,0 +1,151 @@
+$main-color: #1869BC;
+$text-color: #00005d;
+$bg-color: #fff;
+
+/*---------------------------------
+main
+---------------------------------*/
+/* outer */
+.main-visual {
+  position: relative;
+  width:100%;
+  margin-bottom: 60px;
+
+  &-text {
+    display: inline-block;
+    font-size: 4.5rem;
+    color: #fff;
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 0;
+    z-index: 30;
+    &::after {
+      position: absolute;
+      left: 3px;
+      bottom: -3px;
+      content: "Let's move on";
+      font-size: 4.5rem;
+      white-space: pre;
+      color: $main-color;
+      z-index: -1;
+    }
+  }
+  &-item {
+    margin-top: 50px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.main-outer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*---------------------------------
+media max478
+---------------------------------*/
+@media (max-width: 478px) {
+  /*---------------------------------
+  main-visual
+  ---------------------------------*/
+  .main-visual {
+    margin-bottom: 30px;
+    &-text {
+      font-size: 3rem;
+      &::after {
+        font-size: 3rem;
+        left: 1.5px;
+        bottom: -1.5px;
+      }
+    }
+  }
+}
+
+/*---------------------------------
+media min640
+---------------------------------*/
+@media (min-width: 640px) {
+
+  /*---------------------------------
+  main_visual
+  ---------------------------------*/
+  .main-visual {
+    max-height: 650px;
+    &-item {
+      max-height: 600px;
+      object-fit: cover;
+      object-position: top left;
+    }
+    &-text {
+      font-size: 5.8rem;
+      &::after {
+        font-size: 5.8rem;
+      }
+    }
+  }
+}
+
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+    /*---------------------------------
+    main_visual
+    ---------------------------------*/
+    .main-visual {
+      position: relative;
+      display: flex;
+      height: 700px;
+      margin-bottom: 100px;
+      &-item {
+        object-fit: cover;
+        object-position: top right;
+        position: relative;
+        width: 80%;
+        z-index: 100;
+      }
+      .main-outer {
+        position: relative;
+        width: 20%;
+        margin: 0 auto;
+        background-image: linear-gradient(#a0cbf7,#cdf7f7 ,#fff);
+      }
+    .main-visual-text {
+      position: absolute;
+      width: 85%;
+      // margin: 0 auto;
+      font-size: 8.5rem;
+      white-space: pre;
+      z-index: 150;
+      span {
+        font-size: 10rem;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .outside {
+      height: 700px;
+      overflow: hidden;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      overflow: hidden;
+      &::after {
+        width: 95%;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        white-space: pre;
+        color: $main-color;
+        content: "Let's move on";
+        font-size: 10rem;
+        z-index: 150;
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+$main-color: #1869BC;
+$text-color: #00005d;
+$bg-color: #fff;
+
+/*---------------------------------
+contact
+---------------------------------*/
+#contact {
+  position: relative;
+  z-index: 50;
+}
+
+/*---------------------------------
+form
+---------------------------------*/
+
+.form-menu {
+  position: relative;
+  z-index: 90;
+  margin-bottom: 8px ;
+}
+
+label {
+  margin-bottom: 4px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, .4);
+  border: solid 1px #1968BC;
+  border-radius: 5px;
+  width: 100%;
+}
+textarea {
+  height: 6rem;
+}
+
+button {
+  width: 100%;
+  background: $main-color;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  height: 50px;
+  font-size: 1.4rem;
+  transition: .5s ease all;
+  .mail {
+    padding-right: 15px;
+  }
+  &:hover {
+    background: $bg-color;
+    color: $main-color;
+    &:before {
+      width: 100%;
+      transition: .5s ease .2s all;
+    }
+    &::after {
+      animation: arrow 1.2s .7s infinite;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background: $main-color;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: .8rem;
+    margin-top: -5px;
+    border: 7px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: $main-color;
+    opacity: 0;
+  }
+}
+
+@keyframes arrow {
+  50% {
+    right: .2em;
+    opacity: 1;
+  }
+  
+  100% {
+    right: -.4em;
+    opacity: 0;
+  }
+}
+
+.form-img {
+  object-fit: contain;
+  max-width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+}
+
+// /*---------------------------------
+// plane
+// ---------------------------------*/
+// .plane {
+//   width: 50px;
+//   position: absolute;
+//   top: 280px;
+//   right: -50px;
+//   animation: move 6s infinite;
+//   z-index: 100;
+// }
+// @keyframes move {
+//   0% {
+//     transform: none;
+//   }
+//   100% {
+//     transform: translate(-700px, -150px);
+//   }
+// }
+
+
+/*---------------------------------
+media min640
+---------------------------------*/
+@media (min-width: 640px) {
+// /*---------------------------------
+//   plane
+//   ---------------------------------*/
+//   @keyframes move {
+//     100% {
+//       transform: translate(-1100px, -200px);
+//     }
+//   }
+//   .plane {
+//     width: 60px;
+//     top: 150px;
+//     animation-duration: 7s;
+//   }
+
+  /*---------------------------------
+  form
+  ---------------------------------*/
+  .form-img {
+    width: 600px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+    width: 60%;
+  }
+}
+
+/*---------------------------------
+@media min1040
+---------------------------------*/
+@media (min-width: 1040px) {
+
+  // /*---------------------------------
+  // plane
+  // ---------------------------------*/
+  // @keyframes move {
+  //   0% {
+  //     transform: none;
+  //   }
+  //   100% {
+  //     transform: translate(-1950px, -200px);
+  //   }
+  // }
+  // .plane {
+  //   width: 60px;
+  //   animation-duration: 13s;
+  // }
+  /*---------------------------------
+  form
+  ---------------------------------*/
+  .form {
+    margin: 0 auto;
+    &-menu {
+        margin-bottom: 14px;
+    }
+    &-box {
+      width: 40%;
+    }
+    &-img {
+      width: 60%;
+      bottom: -200px;
+    }
+  }
+
+  /*---------------------------------
+  form
+  ---------------------------------*/
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+    width: 50%;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+    height: 60px;
+  }
+}
