@@ -9,6 +9,7 @@ header
   width: 100%;
   position: fixed;
   background: #fff;
+  box-shadow: 0 2px 8px #1869BC;
   padding: 5px 0;
   z-index: 200;
 }

@@ -6,7 +6,7 @@ $bg-color: #fff;
 .contact-check {
   display: block;
   width: 90%;
-  margin: 30px auto;
+  margin: 100px auto;
 }
 
 input {
@@ -30,5 +30,22 @@ input[type="button"] {
 input[type="submit"] {
   background: #1869bd;
   color: #fff;
+}
+
+.check-button {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  color: $main-color;
+  transition-duration: .2s;
+  padding: 4px 7px;
+  width: 110px;
+  &:hover {
+    color: $bg-color;
+    background: $main-color;
+    transition-duration: .2s;
+    border-radius:5px;
+    padding: 4px 7px;
+  }
 }
 

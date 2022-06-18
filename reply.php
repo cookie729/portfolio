@@ -58,13 +58,29 @@
       <div class="contact-check">
         <p>
           <?php
-      $dsn= 'mysql:host=localhost;dbname=cookie.7292;charset=utf8';
-      $user= 'kouki-lmo';
-      $pass= 'Cookie.729';
-      $dbh= new PDO($dsn,$user,$pass);
+      $dsn= 'mysql:host=localhost;dbname=xs916906_koukilmo;charset=utf8';
+      $user= 'xs916906_kouki';
+      $pass= 'koukilmo';
       // var_dump($dbh);
-      
-      
+
+      try {
+
+        $pdo = new PDO($dsn,$user,$pass, array(PDO::ATTR_ERRMODE =>
+        PDO::ERRMODE_EXCEPTION));
+
+        // print('<br>');
+        // if ($pdo == null) {
+        //   print('接続に失敗しました。<br>');
+        // } else {
+        //   print ('接続に成功しました。<br>');
+        // }
+        // exit;
+
+      } catch (PDOException $e) {
+        print('Error:'.$e->getMessage());
+        die();
+      }
+
       $name=$_POST['name'];
       $email=$_POST['email'];
       $number=$_POST['number'];
@@ -75,12 +91,13 @@
       $number= htmlspecialchars($number);
       $message= htmlspecialchars($message);
       
-      print $name;
-      print'様<br/>';
-      print'メッセージありがとうございました。<br/>';
-      print $email;
-      print'に確認メールを送りましたので、ご確認お願いします。<br/>';
+      echo $name;
+      echo '様<br/>';
+      echo 'メッセージありがとうございました。<br/>';
+      echo $email;
+      echo 'に確認メールを送りましたので、ご確認お願いします。<br/>';
       
+      // ユーザーに連絡
       $mail_sub='ご連絡ありがとうございます。';
       $mail_body= $name."様。\nこの度はご連絡頂きましてありがとうございます。\nメッセージの確認をし、再度ご連絡させて頂きますので宜しくお願い致します。";
       $mail_body=html_entity_decode($mail_body, ENT_QUOTES, "UTF-8");
@@ -88,16 +105,27 @@
       mb_language('Japanese');
       mb_internal_encoding("UTF-8");
       mb_send_mail($email, $mail_sub, $mail_body, $mail_head);
+
+
+       // 管理者に連絡
+       $email_admin = 'cookie.lmo729@gmail.com';
+       $mail_sub_admin = 'kouki-lmoのメールがきたよ!';
+       $mail_body_admin = $name."様。\nメール : $email\n 電話番号 : $number\n メッセージ : $message";
+       $mail_body_admin = html_entity_decode($mail_body_admin, ENT_QUOTES, "UTF-8");
+       $mail_head = 'From: cookie.lmo729@gmail.com';
+       mb_send_mail($email_admin, $mail_sub_admin, $mail_body_admin, $mail_head);
       
-      $sql = 'INSERT INTO contact_form (name, email, number, message) VALUES ("'.$name.'","'.$email.'","'.$number.'","'.$message.'")';
-      $stmt = $dbh->prepare($sql);
-      $stmt->execute();
-      
-      $dbh = null;
+       try {
+        $sql = 'INSERT INTO contact_form (name, email, number, message) VALUES ("'.$name.'","'.$email.'","'.$number.'","'.$message.'")';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+       } catch (PDOException $ex){
+          print('PDOException:' . $ex->getMessage());
+      }
       ?>
     </p>
   </div>
-  <a class="contact-check" href="index.html">Homeへ戻る</a>
+    <a class="contact-check check-button" href="index.html">Homeへ戻る</a>
 </main>
 
     <footer id="footer">

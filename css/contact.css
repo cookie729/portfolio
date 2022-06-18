@@ -9,6 +9,7 @@ header
   width: 100%;
   position: fixed;
   background: #fff;
+  box-shadow: 0 2px 8px #1869BC;
   padding: 5px 0;
   z-index: 200;
 }
@@ -896,7 +897,7 @@ media min640
 .contact-check {
   display: block;
   width: 90%;
-  margin: 30px auto;
+  margin: 100px auto;
 }
 
 input {
@@ -921,5 +922,22 @@ input[type=button] {
 input[type=submit] {
   background: #1869bd;
   color: #fff;
+}
+
+.check-button {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  color: #1869BC;
+  transition-duration: 0.2s;
+  padding: 4px 7px;
+  width: 110px;
+}
+.check-button:hover {
+  color: #fff;
+  background: #1869BC;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+  padding: 4px 7px;
 }
 /*# sourceMappingURL=contact.css.map */

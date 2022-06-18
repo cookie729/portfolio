@@ -15,6 +15,7 @@ header
   // text-align: center;
   position: fixed;
   background: $bg-color;
+  box-shadow: 0 2px 8px $main-color;
   padding: 5px 0;
   z-index: 200;
 }
@@ -30,10 +31,6 @@ header
   margin: 0 auto;
   justify-content: space-between;
 }
-
-
-
-
 
 .main-logo {
   width: 30px;
