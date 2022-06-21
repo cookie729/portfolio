@@ -22,6 +22,7 @@ about
   position: relative;
   z-index: 50;
   margin-bottom:15px;
+  margin-left: 0;
 }
 
 .about-bg {
@@ -102,9 +103,13 @@ media min640
   /*---------------------------------
   about
   ---------------------------------*/
-
+  
   #about {
     position: relative;
+  }
+  .name,
+  .profile {
+    margin-left: 0;
   }
 
   .dance-pic {
